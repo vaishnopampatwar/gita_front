@@ -11,7 +11,7 @@ function Login() {
 
     const loginuser =async(e)=>{
         e.preventDefault();
-        const res=await fetch('/signin',{
+        const res=await fetch('https://gitawordb.herokuapp.com/signin',{
             method:"POST",
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify({email,password})

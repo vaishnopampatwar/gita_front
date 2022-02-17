@@ -16,7 +16,7 @@ export const Contact = () => {
     const PostData = async (e) => {
         e.preventDefault();
         const { name, email, message } = user;
-        const res = await fetch("/register", {
+        const res = await fetch("https://gitawordb.herokuapp.com/register", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

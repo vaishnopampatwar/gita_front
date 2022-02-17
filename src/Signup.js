@@ -17,7 +17,7 @@ function Signup() {
     const PostData = async (e) => {
         e.preventDefault();
         const{name ,email ,password,cpassword}=user;
-        const res= await fetch('/signup',{
+        const res= await fetch('https://gitawordb.herokuapp.com/signup',{
             method:'POST',
             headers:{
                 'Content-Type':'application/json'
